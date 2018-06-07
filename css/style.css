@@ -1,0 +1,323 @@
+.hero-image {
+  background-image: url("../images/hero1.jpg");
+  width: 100%;
+  height: 91%;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 640px){}
+@media only screen and (max-width: 479px){}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.div1{
+  width: 98%;
+  margin-left: 15px;
+  float: left;
+  border:1px solid coral;
+  border-radius: 230px 60px;
+}
+
+@media only screen and (max-width: 640px){.div1{width: 98%; font-size: 1vw; margin-left: 0px;}}
+@media only screen and (max-width: 479px){}
+
+.col1{
+  width: 22%; 
+  float: left;
+  padding-top: 5%;
+}
+@media only screen and (max-width: 640px){.col1{width: 100%;}}
+@media only screen and (max-width: 479px){.col1{width: 100%;}}  
+
+
+.col2{
+  width: 75%; 
+  float: left;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 640px){.col2{width: 99%; font-size: 9vw;}}
+@media only screen and (max-width: 479px){.col2{width: 99%; font-size: 9vw;}}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color:;
+    position: relative;
+    border-radius: ;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+.div2{
+  width: 100%;
+  float: left; 
+}
+
+.bg-circle{z-index:-1;position:absolute;border-radius:100%;background:linear-gradient(0deg,#ee0979 0,#ff6a00 100%)}
+.bg-circle-1{height:210rem;width:78rem;top:0rem;left:-66rem}
+.bg-circle-2{height:84rem;width:45rem;top:45rem;right:-30rem}
+.bg-circle-3{height:20rem;width:20rem;bottom:-10rem;right:5%}
+.bg-circle-4{height:10rem;width:10rem;top:62rem;right:35%}
+
+@media only screen and (max-width: 640px){.bg-circle-3{height:9rem;width:21rem;bottom:-5rem;right:-3%} .bg-circle-4{height:5rem;width:5rem;top:55rem;right:7%} .bg-circle-1{height:259rem;width:70rem;top:-43rem;left:-66rem}}
+@media only screen and (max-width: 479px){.bg-circle-3{height:9rem;width:21rem;bottom:-5rem;right:-3%} .bg-circle-4{height:5rem;width:5rem;top:55rem;right:7%} .bg-circle-1{height:259rem;width:70rem;top:-43rem;left:-66rem}}
+
+.bg-circles{z-index:-1;position:absolute;border-radius:100%;background:linear-gradient(0deg,#ffffff 0,#0066ff 100%)}
+.bg-circle-5{height:10rem;width:10rem;top:92rem;right:1%}
+@media only screen and (max-width: 640px){.bg-circle-5{height:5rem;width:5rem;top:103rem;right:0%}}
+@media only screen and (max-width: 479px){.bg-circle-5{height:5rem;width:5rem;top:103rem;right:0%}}
+
+
+.bg-circles1{z-index:-1;position:absolute;border-radius:100%;background:linear-gradient(0deg,#ffffff 0,#0066ff 100%)}
+.bg-circle-6{height:10rem;width:10rem;top:213rem;right:0%}
+.bg-circle-7{height:10rem;width:10rem;top:215rem;right:8%}
+.bg-circles2{z-index:-1;position:absolute;border-radius:100%;background:linear-gradient(0deg,#ffffff 0,#0066ff 100%)}
+.bg-circle-8{height:10rem;width:10rem;top:3rem;right:0%}
+.bg-circle-9{height:10rem;width:10rem;top:5rem;right:0%}
+@media only screen and (max-width: 640px){.bg-circle-6{height:5rem;width:5rem;top:326rem;right:0%} .bg-circle-7{height:5rem;width:5rem;top:326rem;right:20%} .bg-circle-8{height:5rem;width:5rem;top:358.5rem;right:15%}
+.bg-circle-9{height:5rem;width:5rem;top:358.5rem;right:34%}}
+@media only screen and (max-width: 479px){.bg-circle-6{height:5rem;width:5rem;top:326rem;right:0%} .bg-circle-7{height:5rem;width:5rem;top:326rem;right:20%} .bg-circle-8{height:5rem;width:5rem;top:358.5rem;right:15%}
+.bg-circle-9{height:5rem;width:5rem;top:358.5rem;right:34%}}
+
+
+.div3{
+  width: 98%;
+  float: left;
+  background-color: darkslateblue;
+  border-radius: 25px 25px;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 640px){.div3{margin-left: 3px;}}
+@media only screen and (max-width: 479px){.div3{margin-left: 3px;}}
+
+
+.div4{
+  width: 100%;
+  float: left;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 640px){.div3{margin-left: 3px;}}
+@media only screen and (max-width: 479px){.div3{margin-left: 3px;}}
+
+
+button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+
+.div5{
+  width: 100%;
+  float: left;
+
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col3{
+  width: 50%;
+  float: left;
+  margin-left: 0%;
+  background-color: lightgrey;
+}
+@media only screen and (max-width: 640px){.col3{width: 100%; margin-left: 0%;}}
+@media only screen and (max-width: 479px){.col3{width: 100%; margin-left: 0%;}}
+.col4{
+  width: 36%;
+  float: left;
+  margin-left: 13%;
+}
+@media only screen and (max-width: 640px){.col4{width:100%; text-align: justify; margin-left: 0%;}}
+@media only screen and (max-width: 479px){.col4{width:100%; text-align: justify; margin-left: 0%;}}
+
+
+/*footer*/
+footer{
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+
+/*bottom button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: darkmagenta; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}

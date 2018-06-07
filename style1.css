@@ -1,0 +1,82 @@
+body{
+  background-image: url("images/bg2.jpg");
+  }
+
+@media only screen and (max-width: 640px){body{background-image: url(images/bg.jpg); background-size: cover;}}
+/* Style all input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style the container for inputs */
+.container {
+    padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    color: #000;
+    position: relative;
+}
+
+#message p {
+    margin-left: 35px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+#message1 {
+    display:none;
+    color: #000;
+    position: relative;
+}
+
+#message1 p {
+    padding: 10px 35px;
+    font-size: 18px;
+    font-style: italic; 
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -25px;
+    content: "\2713";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -25px;
+    content: "\2718";
+}
+
+.form{
+width: 40%; 
+float: inline-end;"
+}
+
+@media only screen and (max-width: 640px){.form{width: 100%;} #message p{padding: 0px 10px; font-size: 15px;} #message1 p{padding: 0px 10px; font-size: 15px;} .he{font-size: 15px;}}
+@media only screen and (max-width: 479px){}
