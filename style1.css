@@ -75,7 +75,7 @@ input[type=submit] {
 
 .form{
 width: 40%; 
-float: inline-end;"
+float: right;"
 }
 
 @media only screen and (max-width: 640px){.form{width: 100%;} #message p{padding: 0px 10px; font-size: 15px;} #message1 p{padding: 0px 10px; font-size: 15px;} .he{font-size: 15px;}}
